@@ -1,6 +1,6 @@
 :root{
     /*Colors*/
- --gold-crayola: hsl(38, 61%, 73%);
+ --gold-crayola: hsl(202, 75%, 46%);
 --quick-silver: hsla(0, 0%, 65%, 1);
 --davys-grey: hsla(30, 3%, 34%, 1);
 --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -601,6 +601,7 @@ bottom: -5px
     padding: 12px 45px;
     overflow: hidden;
     z-index: 1;
+    margin-left: 510px;
 }
 
 .btn::before{
@@ -629,7 +630,7 @@ bottom: -5px
     min-height: max-content;
     color: var(--smoky-black-1);
 }
-/*Hover over view our menu button isn't working, must be within CSS, must fix*/
+
 .btn:is(:hover, :focus-visible)::before{
     bottom: -50%;
 }
@@ -950,6 +951,19 @@ line-height: var(--lineHeight-4);
     }
 }
 
+.background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -200px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+ }
+ 
+ .background-images .shape {
+    position: absolute;
+ }
 
 
 /*About*/
