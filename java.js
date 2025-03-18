@@ -108,4 +108,21 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide
 
 window.addEventListener("load", autoSlide)
 
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
 
+
+window.addEventListener("mousemove", function (event){
+    x =(event.clientX / window.innerWidth * 10) - 5;
+    y =(event.clientY / window.innerWidth * 10) - 5;
+
+    x = x - (x * 2);
+    y = y - (y * 2);
+
+    for (let i = 0; i < parallaxItems.length; i++) {
+        x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+        y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+        parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`
+        
+    }
+
+})
