@@ -1,6 +1,6 @@
 :root{
     /*Colors*/
- --gold-crayola: hsl(202, 75%, 46%);
+ --teal-crayola: hsl(202, 75%, 46%);
 --quick-silver: hsla(0, 0%, 65%, 1);
 --davys-grey: hsla(30, 3%, 34%, 1);
 --smoky-black-1: hsla(40, 12%, 5%, 1);
@@ -157,7 +157,7 @@ body.nav-active{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
     
 }
 
@@ -167,7 +167,7 @@ body.nav-active{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
     z-index: 10;
     display: grid;
     place-content: center;
@@ -250,14 +250,14 @@ body.nav-active{
 .separator{
     width: 8px;
     height: 8px;
-    border: 1px solid var(--gold-crayola);
+    border: 1px solid var(--teal-crayola);
     transform: rotate(45deg);
 }
 
 .contact-label { font-weight: var(--weight-bold);}
 
 .contact-number{
-    color: var(--gold-crayola);
+    color: var(--teal-crayolayola);
     max-width: max-content;
     margin-inline: auto;
 }
@@ -274,7 +274,7 @@ body.nav-active{
     bottom: 0;
     width: 100%;
     height: 5px;
-    border-block: 1px solid var(--gold-crayola);
+    border-block: 1px solid var(--teal-crayola);
     transform: scaleX(0.2);
     opacity: 0;
     transition: var(--transition-2);
@@ -464,7 +464,7 @@ bottom: -5px
 }
 
 .navbar .close-btn:is(:hover, :focus-visible){
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
 }
 
 .navbar .logo{
@@ -494,7 +494,7 @@ bottom: -5px
 }
 
 .navbar-link:is(:hover, :focus-visible, .active) .span{
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
     transform: translateX(20px);
 }
 
@@ -528,7 +528,7 @@ bottom: -5px
 }
 
 .sidebar-link:is(:hover, :focus-visible){
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
 }
 
 .navbar .text-center .separator{
@@ -574,7 +574,7 @@ bottom: -5px
 
 .section-subtitle{
     position: relative;
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
     font-weight: var(--weight-bold);
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing-2);
@@ -591,13 +591,13 @@ bottom: -5px
 
 .btn{
     position: relative;
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
     font-size: var(--weight-bold);
     font-weight: var(--weight-bold);
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing-5);
     max-width: max-content;
-    border: 3px solid var(--gold-crayola);
+    border: 3px solid var(--teal-crayola);
     padding: 12px 45px;
     overflow: hidden;
     z-index: 1;
@@ -613,7 +613,7 @@ bottom: -5px
     width: 200%;
     height: 200%;
     border-radius: var(--radius-circle);
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
     transition: var(--transition-2);
     z-index: -1
 }
@@ -649,7 +649,7 @@ bottom: -5px
 }
 
 .btn-secondary{
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
     color: var(--black);
 }
 
@@ -668,6 +668,54 @@ bottom: -5px
     content: "";
     position: absolute;
 }
+
+  
+
+  .grid-list {
+    display: grid;
+    gap: 40px;
+  }
+  
+ 
+  
+  .hover\:shine:is(:hover, :focus-within)::after {
+    transform: skewX(-0.08turn) translateX(275%);
+    transition: var(--transition-3);
+  }
+  
+
+  
+  
+  .btn-text:is(:hover, :focus-visible) { color: var(--white); }
+  
+  .shape {
+    display: none;
+    position: absolute;
+    max-width: max-content;
+    z-index: -1;
+  }
+  
+  .w-100 { width: 100%; }
+  
+  .move-anim { animation: move 5s linear infinite; }
+  
+
+
+  .input-field {
+    background-color: var(--eerie-black-2);
+    color: var(--white);
+    height: 56px;
+    padding: 10px 20px;
+    border: 1px solid var(--white-alpha-10);
+    margin-block-end: 20px;
+    outline: none;
+    transition: border-color var(--transition-2);
+  }
+  
+  .input-field::placeholder { color: inherit; }
+  
+  .input-field:focus { border-color: var(--gold-crayola); }
+  
 
 .hero .slider-btn{
     display: none;
@@ -744,7 +792,7 @@ bottom: -5px
     bottom: 15px;
     right: 15px;
     z-index: 2;
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
     width: 110px;
     height: 110px;
     padding: 12px;
@@ -766,7 +814,7 @@ bottom: -5px
 
 .hero-btn::after{
     inset: 0;
-    border: 1px solid var(--gold-crayola);
+    border: 1px solid var(--teal-crayola);
     animation: rotate360 1s linear infinite;
 }
 
@@ -836,7 +884,7 @@ bottom: -5px
 }
 
 .special-dish-content .span{
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
 }
 
 .special-dish .btn{
@@ -858,7 +906,7 @@ bottom: -5px
 }
 
 .hover\:card .card-banner{
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
 }
 
 .hover\:card .card-banner .img-cover {
@@ -881,11 +929,11 @@ bottom: -5px
 }
 
 .menu-card .card-title:is(:hover, :focus-visible){
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
 }
 
 .menu-card .badge{
-    background-color: var(--gold-crayola);
+    background-color: var(--teal-crayola);
     color: var(--eerie-black-1);
     font-family: var(--fontFamily-forum);
     max-width: max-content;
@@ -896,7 +944,7 @@ bottom: -5px
 }
 
 .menu-card .span{
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
     margin-inline: 10px;
 }
 
@@ -907,7 +955,7 @@ line-height: var(--lineHeight-4);
 
 .menu-text .span{
     display: inline-block;
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
 }
 
 .menu-card .card-text{
@@ -1033,7 +1081,7 @@ line-height: var(--lineHeight-4);
 
 .form-text .link{
     display: inline;
-    color: var(--gold-crayola);
+    color: var(--teal-crayola);
 }
 
 .form-right .headline-1{
@@ -1098,7 +1146,7 @@ textarea.input-field{
 }
 
 .input-field:focus{
-    border-color: var(--gold-crayola);
+    border-color: var(--teal-crayola);
 }
 
 .icon-wrapper{
@@ -1203,7 +1251,7 @@ textarea.input-field{
   
     .topbar .link { transition: var(--transition-1); }
   
-    .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+    .topbar .link:is(:hover, :focus-visible) { color: var(--teal-crayola); }
   
   
   
@@ -1298,9 +1346,9 @@ textarea.input-field{
       display: grid;
       position: absolute;
       z-index: 1;
-      color: var(--gold-crayola);
+      color: var(--teal-crayola);
       font-size: 2.4rem;
-      border: 1px solid var(--gold-crayola);
+      border: 1px solid var(--teal-crayola);
       width: 45px;
       height: 45px;
       place-items: center;
@@ -1316,7 +1364,7 @@ textarea.input-field{
     .hero .slider-btn.next { right: 30px; }
   
     .hero .slider-btn:is(:hover, :focus-visible) {
-      background-color: var(--gold-crayola);
+      background-color: var(--teal-crayola);
       color: var(--black);
     }
   
